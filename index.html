@@ -185,17 +185,28 @@
     <img class="hero-diamond" src="img/diamond_scene.png" alt="">
   </div>
   <div class="hero-c">
-    <div class="hero-pre">◉ BELENTANI PRESENTA • JUDAS ERA • 2026 ◉</div>
-    <h1 class="hero-title" id="heroTitle">BELENTANI</h1>
-    <p class="hero-sub">Belentani dirige un ecosistema visual y sonoro donde el cristal, el neón y la voz operan como
-      un solo sistema. Judas es una figura escénica del mito; la autoría, el sonido y la mirada permanecen en el centro.</p>
+    <div class="hero-pre">◉ BELENTANI PRESENTA • OMEGA PORTAL • 2026 ◉</div>
+    <h1 class="hero-title" id="heroTitle">BELENTANI<span>OMEGA</span></h1>
+    <p class="hero-sub">No estás entrando en una web. Estás cruzando un sistema vivo de sonido, imagen y memoria: una
+      galaxia creativa donde cada archivo abre una frecuencia y cada frecuencia revela otra versión del autor.</p>
     <div class="hero-badges">
       <span class="badge-primary">Judas Era</span>
       <span>Glassmorphism</span>
       <span>Crystal Drift</span>
       <span>Archivo vivo</span>
     </div>
-    <a class="cta" href="#manifesto">[ ENTRAR EN LA ERA ]</a>
+    <div class="hero-actions">
+      <a class="cta" href="#portal">[ ENTRAR EN EL PORTAL ]</a>
+      <button class="portal-mode-btn" id="portalModeToggle" type="button" aria-pressed="false">ACTIVAR MODO INMERSIVO</button>
+    </div>
+    <div class="portal-orbit" aria-label="Accesos rápidos del portal">
+      <span class="orbit-line"></span>
+      <button data-jump="artist"><b>01</b><span>ORIGEN</span></button>
+      <button data-jump="music"><b>02</b><span>SONIDO</span></button>
+      <button data-jump="judas"><b>03</b><span>MITO</span></button>
+      <button data-jump="zion"><b>04</b><span>ZION</span></button>
+      <button data-jump="portal"><b>05</b><span>PORTAL</span></button>
+    </div>
     <button class="hero-motion-toggle" id="heroMotionToggle" type="button" aria-controls="heroVideo"
       aria-pressed="false">PAUSAR MOTION</button>
   </div>
@@ -971,6 +982,7 @@
 <script src="js/10-v13.js"></script>
 <script src="js/11-unified.js"></script>
 <script src="js/12-hero-media.js"></script>
+<script src="js/13-portal-experience.js"></script>
 <script src="js/sw-register.js"></script>
 </body>
 

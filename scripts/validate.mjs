@@ -15,7 +15,7 @@ if (!serviceWorker.includes("addEventListener")) {
   throw new Error("sw.js does not look like a service worker");
 }
 
-const files = ["sw.js", ...Array.from({ length: 12 }, (_, i) => `js/${String(i + 1).padStart(2, "0")}-${["boot", "scroll", "webgl", "matrix", "audio", "ai", "portal", "content", "terminal", "v13", "unified", "hero-media"][i]}.js`), "js/sw-register.js"];
+const files = ["sw.js", ...Array.from({ length: 12 }, (_, i) => `js/${String(i + 1).padStart(2, "0")}-${["boot", "scroll", "webgl", "matrix", "audio", "ai", "portal", "content", "terminal", "v13", "unified", "hero-media"][i]}.js`), "js/13-portal-experience.js", "js/sw-register.js"];
 for (const file of files) {
   await access(join(root, file));
   await exec(process.execPath, ["--check", join(root, file)]);
