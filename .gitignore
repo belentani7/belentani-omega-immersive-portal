@@ -1,24 +1,16 @@
-﻿# OS
-.DS_Store
-Thumbs.db
-desktop.ini
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Logs
-*.log
-logs/
-
-# remediacion 2026-09-14
+# --- guardias-sinc-2026-10-08 (auto) ---
 node_modules/
 .env
 .env.*
-.mimosa/
-__pycache__/
-.vercel/
+!.env.example
+*.pem
+*.key
+.next/
+.nuxt/
+.turbo/
+dist/
+build/
+coverage/
 *.log
+.DS_Store
