@@ -1,4 +1,5 @@
-var CACHE = 'belentani-omega-v15';
+var CACHE_PREFIX = 'belentani-omega-';
+var CACHE = CACHE_PREFIX + 'v16';
 var CORE = [
   './',
   './index.html',
@@ -16,6 +17,7 @@ var CORE = [
   './js/10-v13.js',
   './js/11-unified.js',
   './js/12-hero-media.js',
+  './js/13-portal-experience.js',
   './js/sw-register.js'
 ];
 
@@ -30,7 +32,7 @@ self.addEventListener('install', function(e) {
 self.addEventListener('activate', function(e) {
   e.waitUntil(
     caches.keys().then(function(keys) {
-      return Promise.all(keys.filter(function(k) { return k !== CACHE; }).map(function(k) { return caches.delete(k); }));
+      return Promise.all(keys.filter(function(k) { return k.indexOf(CACHE_PREFIX) === 0 && k !== CACHE; }).map(function(k) { return caches.delete(k); }));
     }).then(function() { return self.clients.claim(); })
   );
 });
@@ -39,7 +41,7 @@ self.addEventListener('fetch', function(e) {
   var req = e.request;
   if (req.method !== 'GET') return;
   var url = new URL(req.url);
-  // Estrategia: network-first para CDN/fonts, cache-first para locales
+  // Estrategia: cache-first para CDN/fonts y network-first para recursos locales.
   if (url.origin !== location.origin) {
     e.respondWith(
       caches.match(req).then(function(cached) {

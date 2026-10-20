@@ -19,7 +19,6 @@ En línea: <https://belentani-omega-immersive-portal.vercel.app>
 | `magic/` | Efectos |
 | `ecosistema.html` | Vista del ecosistema |
 | `ecosystem.json` | Datos del ecosistema |
-| `CNAME` | Dominio propio |
 
 ## Documentación
 
@@ -28,3 +27,18 @@ En línea: <https://belentani-omega-immersive-portal.vercel.app>
 ## Licencia
 
 MIT — ver `LICENSE`.
+
+## Validación
+
+Con Node.js 20, ejecuta:
+
+```sh
+node scripts/validate.mjs
+node --test scripts/*.test.mjs
+```
+
+El workflow Quality ejecuta ambas comprobaciones en cada push y pull request.
+
+## Publicación
+
+La versión de producción se sirve desde el proyecto Vercel asociado a este repositorio: <https://belentani-omega-immersive-portal.vercel.app>.
