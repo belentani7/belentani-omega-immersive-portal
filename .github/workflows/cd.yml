@@ -1,0 +1,8 @@
+name: CD
+on: { workflow_dispatch: { inputs: { environment: { type: choice, options: [staging, production] } } } }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo Deploy
