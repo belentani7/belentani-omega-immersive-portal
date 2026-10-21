@@ -1,0 +1,1 @@
+export default [{ files: ['**/*.{ts,tsx}'], languageOptions: { parserOptions: { project: './tsconfig.json' }}, rules: { '@typescript-eslint/no-explicit-any': 'warn' }}]
