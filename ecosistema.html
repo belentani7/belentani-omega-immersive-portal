@@ -19,7 +19,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;back
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--primary);color:#070707}
 h1,h2,h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;text-wrap:balance}
-h1{font-size:clamp(3rem,9vw,6.5rem);line-height:.92;color:#fff}
+h1{font-size:clamp(3rem,9vw,6rem);line-height:.92;color:#fff}
 h2{font-size:2.4rem}
 .brand-line{font-family:'Bebas Neue',sans-serif;letter-spacing:.35em;color:var(--primary);font-size:.95rem;margin-top:2.2rem}
 header.home{padding:7vh 0 2vh;border-bottom:1px solid var(--line)}
@@ -45,6 +45,9 @@ footer{border-top:1px solid var(--line);margin-top:6vh;padding:3.4vh 0 6vh;color
 footer a{color:#fff;border-bottom:1px solid var(--primary);text-underline-offset:3px}
 @media(max-width:640px){.cardset{grid-template-columns:repeat(2,1fr)}.card{min-height:80px}.card.big{min-height:120px}}
 @media print{footer{display:none}}
+
+    :focus-visible{outline:2px solid #ff073a;outline-offset:3px;border-radius:4px}
+    input:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #ff073a;outline-offset:3px;border-radius:4px}
 </style>
 </head>
 <body>

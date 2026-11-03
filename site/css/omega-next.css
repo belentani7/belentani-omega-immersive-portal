@@ -13,7 +13,7 @@
 .omega-form { display:grid; grid-template-columns:1fr 1fr auto; gap:.75rem; align-items:end; margin-top:1.4rem; }
 .omega-form label, .omega-studio__form label { display:grid; gap:.4rem; color:#e9dec9; font:600 .69rem/1.3 "Space Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
 .omega-form input, .omega-studio textarea, .omega-studio select { width:100%; box-sizing:border-box; border:1px solid rgba(213,176,107,.45); border-radius:0; padding:.8rem; color:#fff7ea; background:rgba(0,0,0,.42); font:inherit; }
-.omega-form input:focus, .omega-studio textarea:focus, .omega-studio select:focus, .omega-media-control:focus { outline:2px solid #f4ca71; outline-offset:3px; }
+.omega-form input:focus, .omega-studio textarea:focus, .omega-studio select:focus, .omega-media-control:focus:focus-visible{ outline:2px solid #f4ca71; outline-offset:3px; }
 .omega-action { min-height:44px; border:1px solid #d5b06b; padding:.8rem 1rem; color:#160708; background:#d5b06b; font:700 .72rem/1 "Space Mono",monospace; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
 .omega-action--ghost { color:#f7e4bd; background:transparent; }
 .omega-edition-engine__status { min-height:1.5rem; margin:1rem 0 0; color:#f2d7a0; }

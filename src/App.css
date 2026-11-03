@@ -23,6 +23,6 @@ button {
   transition: background 0.2s;
 }
 
-button:hover {
+button:hover:focus-visible{
   background: #1d4ed8;
 }

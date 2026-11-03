@@ -1,0 +1,28 @@
+---
+alwaysApply: true
+description: Reglas globales del ecosistema belentani7 para belentani-omega-immersive-portal
+globs:
+  - '**/*'
+---
+
+# Reglas globales — belentani-omega-immersive-portal (Cursor / AGENTS.md)
+
+## Siempre (Always Apply)
+
+- No commitear secretos, API keys, tokens ni credenciales. Usar `.env.example` y nunca `.env`.
+- Ejecutar `gitleaks` antes de cada push (config en `.gitleaks.toml`).
+- CODEOWNERS: `@belentani7` revisión requerida en cada PR (incluye subcarpetas /docs, /.github, /SECURITY.md).
+- Convenciones de commit: `type(scope): summary` (feat, fix, docs, chore, refactor, test, perf, style).
+- Cambios reversibles, uno a uno. No romper el working tree.
+
+## Por tipo de archivo
+
+- `**/*.html` — Impeccable: sin gradient text, sin side-stripe borders, sin eyebrow en cada sección, hero heading <= 6rem (96px), `focus-visible` (#ff073a), `lang`, viewport, touch targets >= 44px, estados vacío/error/carga, z-index semántico. No dejar `var(--ng-red,...)`; usar token CANON `#ff073a`.
+- `**/*.css` — tokens CANON donde corresponda, `prefers-reduced-motion`, no bounce ni elastic easing, line length 65-75ch.
+- `**/*.js` — validar entrada, estados vacío/error/carga, no hardcodear secretos, Three.js/Tone.js/GSAP con fallbacks y `prefers-reduced-motion`.
+- `**/*.ts` (playwright.config.ts, vite.config.ts) — exports nombrados, no `any`.
+
+## Nested AGENTS.md
+
+- `AGENTS.md` en raíz: reglas globales del proyecto.
+- `site/AGENTS.md`, `css/AGENTS.md`, `js/AGENTS.md`, `e2e/AGENTS.md`: reglas específicas (opcionales, anidadas).
