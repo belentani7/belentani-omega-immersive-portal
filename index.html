@@ -1,13 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Omega Immersive Portal — Belentani</title>
-  <style>body{margin:0;font-family:system-ui,sans-serif;background:#0a0a0a;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh}h1{font-size:2rem;letter-spacing:0.1em}p{opacity:0.7;margin-top:1rem}</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050712">
+<meta name="description" content="OMEGA — portal inmersivo del universo Belentani. Explora un espacio de memoria, luz y transformación.">
+<title>OMEGA — Immersive Portal | Belentani</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#f5f7ff;background:#050712}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 50% 45%,#172345 0%,#090d20 35%,#050712 75%)}
+a{color:inherit}a:focus-visible{outline:2px solid #a6d9ff;outline-offset:5px}
+.skip{position:absolute;top:-5rem;left:1rem;background:white;color:#050712;padding:.7rem;z-index:10}.skip:focus{top:1rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.4rem clamp(1.2rem,5vw,5rem);position:relative;z-index:2}
+.brand{text-decoration:none;letter-spacing:.32em;font-size:.8rem;font-weight:700}header span{font-size:.7rem;letter-spacing:.2em;color:#b6c6e7}
+main{min-height:85vh;display:grid;place-items:center;text-align:center;padding:4rem 1rem;isolation:isolate;position:relative}
+.orbit{width:min(72vw,460px);aspect-ratio:1;border:1px solid #8db8ff32;border-radius:50%;position:absolute;z-index:-1;box-shadow:0 0 110px #4c68c52a,inset 0 0 90px #3b54ad20;animation:breath 8s ease-in-out infinite alternate}
+.orbit:before,.orbit:after{content:"";position:absolute;border-radius:50%;inset:12%;border:1px solid #d0e2ff1b;transform:rotateX(65deg) rotate(-30deg)}
+.orbit:after{inset:27%;transform:none;background:radial-gradient(circle at 35% 30%,#9dc9ff,#4b66b0 20%,#111b43 55%,#050a1d 78%);box-shadow:0 0 70px #577bd388}
+.hero{max-width:48rem;position:relative;z-index:1}h1{font-size:clamp(4.8rem,17vw,11rem);letter-spacing:.18em;font-weight:300;margin:0 0 1rem;text-indent:.18em;text-shadow:0 0 50px #050712}
+.kicker{font-size:.72rem;letter-spacing:.38em;text-transform:uppercase;color:#b8cafa}
+.lead{max-width:30rem;margin:1.8rem auto;line-height:1.7;color:#d5dff4}
+.cta{display:inline-block;text-decoration:none;border:1px solid #b5d4ff8c;border-radius:999px;padding:.9rem 1.5rem;background:#050b20bb;transition:background .2s}
+.cta:hover{background:#263b6e}
+section{padding:5rem 1.3rem;text-align:center;border-top:1px solid #ffffff18}section h2{font-size:clamp(1.5rem,4vw,2.7rem);font-weight:400}section p{max-width:37rem;margin:auto;line-height:1.8;color:#c4d0e9}
+footer{text-align:center;padding:2rem;color:#9caccd;font-size:.8rem}
+@keyframes breath{to{transform:scale(1.08);opacity:.7}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.orbit{animation:none}.cta{transition:none}}
+</style>
 </head>
 <body>
-  <h1>Omega Immersive Portal</h1>
-  <p>Entrada inmersiva al sistema estelar OMEGA</p>
-  <p>Sitio en construcción. Enlace restaurado.</p>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><a class="brand" href="#inicio">BELENTANI</a><span>IMMERSIVE UNIVERSE</span></header>
+<main id="contenido"><div class="orbit" aria-hidden="true"></div><div class="hero" id="inicio"><p class="kicker">Beyond the visible</p><h1>OMEGA</h1><p class="lead">Un umbral hacia el universo de Belentani. Donde la memoria se convierte en materia y la luz revela nuevos mundos.</p><a class="cta" href="#explorar">Explorar el portal</a></div></main>
+<section id="explorar" aria-labelledby="titulo-explorar"><h2 id="titulo-explorar">Un universo en expansión</h2><p>OMEGA es una puerta narrativa al cosmos creativo de Belentani: arte, tecnología, música e identidad en una misma constelación.</p></section>
+<footer>© Belentani · OMEGA</footer>
 </body>
 </html>
