@@ -42,3 +42,7 @@ El workflow Quality ejecuta ambas comprobaciones en cada push y pull request.
 ## Publicación
 
 La versión de producción se sirve desde el proyecto Vercel asociado a este repositorio: <https://belentani-omega-immersive-portal.vercel.app>.
+
+
+## Producto
+Véase `plataforma/OFERTA.md`, `plataforma/precios.json`, `plataforma/ONEPAGER.md`.
