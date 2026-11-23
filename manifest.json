@@ -1,0 +1,27 @@
+{
+  "name": "BELENTANI // JUDAS ERA — OMEGA",
+  "short_name": "BELENTANI",
+  "description": "Frecuencia hiperreal. Arquitectura del alma. El nucleo de una nueva era musical donde el trauma es el codigo y la voz es la llave.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050505",
+  "theme_color": "#ff003c",
+  "lang": "es",
+  "categories": ["music", "entertainment", "art"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='68' font-size='60' fill='%23ff003c' text-anchor='middle'>%E2%97%89</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='68' font-size='60' fill='%23ff003c' text-anchor='middle'>%E2%97%89</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
