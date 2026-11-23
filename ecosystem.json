@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "ecosystem": "BELENTANI",
+  "universe": "OMEGA",
+  "layer": "system",
+  "role": "public-omega-surface",
+  "status": "active",
+  "parent_repository": "belentani7/Belentani",
+  "contract": {
+    "inputs": ["BELENTANI identity", "OMEGA components", "creative content"],
+    "outputs": ["integrated experience"],
+    "integration": "BELENTANI ecosystem contract",
+    "destructive_merges": false
+  }
+}

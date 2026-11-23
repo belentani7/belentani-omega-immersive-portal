@@ -1,12 +1,24 @@
-# Generated OS metadata, Python bytecode, and HTML reports
+﻿# OS
 .DS_Store
-._*
-__MACOSX/
 Thumbs.db
-Desktop.ini
 desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# remediacion 2026-09-14
+node_modules/
+.env
+.env.*
+.mimosa/
 __pycache__/
-*.pyc
-*.pyo
-htmlcov/
-playwright-report/
+.vercel/
+*.log
